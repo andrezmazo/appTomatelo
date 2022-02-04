@@ -1,0 +1,26 @@
+:root {
+    --gris: #f2f2f2;
+    --grisOscuro: #a6a6a6;
+    --magenta: #ff0080;
+    --azul: #45f5effd;
+    --naranja2: #f2a341;
+    --naranja3: #d9863d;
+    --negro: #292929;
+    --footerHeight: 10vh;
+  }
+  
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.back{
+    background: linear-gradient(--azul, transparent),
+    /* linear-gradient(to top left, lime, transparent), */
+      linear-gradient(to top right, --magenta, transparent);
+    background-blend-mode: screen;
+}
+    
+  
