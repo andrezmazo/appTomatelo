@@ -1,2 +1,40 @@
 @import url("./global.css");
 
+.datos-titulo{
+    font-weight: 700;
+    font-size: 4vw;
+}
+.barra{
+    width: 80%;
+    color: white;
+}
+.cont-juego{
+    background-color: var(--blancot);
+    width: 80%;
+    border-radius: 15px;
+    align-content: center;
+    justify-content: center;
+    margin: 0 2px;
+    color: var(--grisOscuro);
+    box-shadow: 0px 0px 6px 3px rgba(68, 68, 68, 0.3);
+    display: flex;
+    flex-direction: column;
+
+}
+.cont-boton-editar, .cont-boton-borrar, .cont-boton-anadir{
+    border-radius: 5px;
+    border: 0.01px solid white;
+    border-color: rgba(255, 255, 255, 0);
+    
+
+}
+.boton-editar, .boton-borrar, .boton-anadir{
+    border-radius: 12px;
+    padding: 5px;
+    border: 0.02px solid white;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+  

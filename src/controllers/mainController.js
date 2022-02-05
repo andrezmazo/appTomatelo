@@ -2,7 +2,7 @@ const express = require("express")
 const path = require ("path")
 
 const pruebas =[
-    {id:"1",
+    {id:1,
     tipo: "Facil",
     titulo: "Yo nunca" ,
     descripcion: "Yo he vomitado de la borrachera ",
@@ -35,9 +35,9 @@ const mainController = {
         res.render("home")
     }   ,
     pruebaDetail:  (req,res) => {
-        let prueba = pruebas.find(prueba => prueba.id ==req.params.pruebas.id)
+        let prueba = pruebas.find(prueba => prueba.id ==req.params.pruebaId)
         console.log(prueba)
-        res.render("pruebaDetail", {"pruebaId": pruebaId})
+        res.render("pruebaDetail", {"prueba": prueba})
     },
     resultados: (req,res) => {
         res.render("resultados")

@@ -15,16 +15,47 @@
     <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
-    <h2>TOMATELO</h2>
-    <section>
-
+    <section class="cont-index">
+    <h2 class=titulo-index >TOMATELO</h2>
+    <p class=descripcion-index>Juega con tus amigos</p>
         <div>
             <img src="img/logo.png" alt="">
         </div>
-        <div class="boton-ingresar">
-            
+        <div class="cont-boton-ingresar">
+          <button class="boton-ingresar">
+             <a href="javascript:ingresarMostrar()"> <p>Ingresar</p></a>
+          </button>  
         </div>
+        <div class="cont-boton-crear-cuenta">
+            <button class="boton-crear-cuenta">
+                <a href="javascript:registrarMostrar()"> <p>Crear Cuenta</p> </a>
+            </button>  
+        </div>
+        <a href="/home">Seguir derecho, esta es mi casa</a>
     </section>
-        
+
+    <%- include("partials/ingresar.ejs") %>
+    <%- include("partials/registrar.ejs") %>
+
+
+
+
+    <script>
+        function ingresarMostrar(){
+            document.getElementById("contIngresar").style.display="block"
+            document.getElementById("contRegistrar").style.display="none"
+        }
+        function registrarMostrar(){
+            document.getElementById("contIngresar").style.display="none"
+            document.getElementById("contRegistrar").style.display="block"
+        }
+    </script>
+    
+
+
+
+
+
+
 </body>
 </html>
