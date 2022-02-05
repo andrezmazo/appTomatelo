@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomatelo Index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <section class="cont-index">
+    <h2 class=titulo-index >TOMATELO</h2>
+    <p class=descripcion-index>Juega con tus amigos</p>
+        <div>
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="cont-boton-ingresar">
+          <button class="boton-ingresar">
+             <a href="javascript:ingresarMostrar()"> <p>Ingresar</p></a>
+          </button>  
+        </div>
+        <div class="cont-boton-crear-cuenta">
+            <button class="boton-crear-cuenta">
+                <a href="javascript:registrarMostrar()"> <p>Crear Cuenta</p> </a>
+            </button>  
+        </div>
+        <a href="/home">Seguir derecho, esta es mi casa</a>
+    </section>
+
+    <%- include("partials/ingresar.ejs") %>
+    <%- include("partials/registrar.ejs") %>
+
+
+
+
+    <script>
+        function ingresarMostrar(){
+            document.getElementById("contIngresar").style.display="block"
+            document.getElementById("contRegistrar").style.display="none"
+        }
+        function registrarMostrar(){
+            document.getElementById("contIngresar").style.display="none"
+            document.getElementById("contRegistrar").style.display="block"
+        }
+    </script>
+    
+
+
+
+
+
+
+</body>
+</html>

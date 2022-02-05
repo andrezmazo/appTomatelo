@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    
+    <title>Document</title>
+</head>
+
+<body class="back">
+
+
+
+
+    <section class = cont-juego>
+        <p class="datos-titulo"> Datos del Juego</p>
+        <p class="datos-descripcion"> ¿Cuantos son del parche?</p>
+        <div class="cont-barra">
+            <input class="barra" type="range" name="rangeInput" min="2" max="10" step="1" value="2" onchange ="updateTextInput(this.value);">
+        </div>
+        <input type="text" id="textInput" value="" readonly style="text-decoration: none; border-style:none ;" >
+        <div class="cont-jugador">
+            <input type="text" placeholder="Nombre ">
+            <div class="cont-boton-anadir">
+                <button class="boton-anadir">Añadir </button>
+            </div>
+            <div class="cont-boton-borrar">
+                <button class="boton-borrar">x</button>
+            </div>
+
+
+        </div>
+        <div class="cont-jugadores">
+            <div class="cont-boton-editar">
+                <button class="boton-editar">Editar</button>
+            </div>
+            <div class="cont-boton-borrar">
+                <button class="boton-borrar">x</button>
+            </div>
+        </div>
+        
+    
+    </section>
+
+    
+    <script>
+        function updateTextInput(val) {
+              document.getElementById('textInput').value=val; 
+            }
+    </script>
+</body>
+</html>
