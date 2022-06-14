@@ -1,10 +1,9 @@
-
-
-
     index
-        login
-        Register
-        Pasar derecho
+        Div
+            Logo
+            login
+            Register
+            Pasar derecho
 
     home
         Datos a ingresar
@@ -23,5 +22,3 @@
     resultados
         resultados de cada jugador
         volver a jugar envia a home
-    
-
